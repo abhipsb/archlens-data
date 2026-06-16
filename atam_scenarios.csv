@@ -1,0 +1,7 @@
+scenario_id,attribute,importance,scenario_text,acceptance_criteria
+S041,Scalability,High,"Add 25k devices (to total 50k) and initiate network scan; status latency at control level must not degrade >10% vs normal.","25k devices added; network scan initiated; status latency monitored"
+S042,Performance,High,"Efficient operations at scale; firmware update ≤ 3 min per device; bulk parallelization.","Firmware updates completed within SLA; bulk operations executed successfully"
+S043,Security,High,"Secure operating environment. Use SNMPv3, secure storage, RBAC; tenant isolation.","Security controls implemented; tenant isolation verified"
+S044,Deployability,High,"A deployment package is deployed to a new target platform (IEM, IED, Kubernetes, Cloud).","The application automatically enables the appropriate platform-specific functionality using configuration and feature flags without requiring a new build."
+S045,Modifiability,High,"A new client requires custom integrations and branding.","Client-specific functionality is added with minimal impact to existing customers."
+S046,Security,High,"A deployment platform introduces stricter security controls requiring platform-specific libraries or hardening.","Platform-specific packages can be produced while maintaining traceability and minimizing code divergence."

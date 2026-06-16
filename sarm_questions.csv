@@ -1,0 +1,18 @@
+question_key,text,quality_attribute,weight_label,category
+Q201,"Can the system maintain a 10s polling cycle across 50k devices (with retry limits defined)?",Scalability,Major,Application Architecture
+Q202,"Is the O(n²) control computation mitigated (batching, sharding, or approximation)?",Scalability,Major,Application Architecture
+Q203,"Is a data aggregation strategy defined with back-pressure and sampling guarantees?",Scalability,Major,Application Architecture
+Q204,"≤ 3 min per device (upload, trigger, restart) under target load?",Performance,Major,Application Architecture
+Q205,"Back-pressure and queue-depth SLOs defined?",Performance,Major,Application Architecture
+Q206,"Resource SLOs (CPU/RAM/disk) defined for each tier?",Performance,Major,Application Architecture
+Q207,"SNMPv3, secure credential storage, RBAC enforced?",Security,Major,Application Architecture
+Q208,"Tenant-scoped tokens and egress policy to prevent cross-tenant access?",Security,Major,Application Architecture
+Q209,"Can platform-specific behavior be enabled through configuration rather than source-code modification?",Modifiability,Major,Application Architecture
+Q210,"Are environment-specific settings externalized from the application binary?",Deployability,Major,Application Architecture
+Q211,"Can the same deployment artifact be deployed across multiple supported environments?",Portability,Major,Application Architecture
+Q212,"Does the architecture support tenant/client-specific customization without code duplication?",Maintainability,Major,Application Architecture
+Q213,"Are feature flags or plugin mechanisms available for client-specific functionality?",Modifiability,Major,Application Architecture
+Q214,"Can client-specific capabilities be isolated from the core application?",Maintainability,Major,Application Architecture
+Q215,"Can platform-specific dependencies be isolated without affecting other deployment targets?",Maintainability,Major,Application Architecture
+Q216,"Is the build pipeline capable of producing platform-specific artifacts when required?",Deployability,Major,Application Architecture
+Q217,"Are security controls consistently validated across all deployment variants?",Security,Major,Application Architecture
